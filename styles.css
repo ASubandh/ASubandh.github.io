@@ -6,7 +6,8 @@ body {
 footer{
   color:white;
   font-family: 'Jaldi', sans-serif;
-  font-size: 50%;
+  font-size: 100%;
+  text-align: center;
 }
 body.gallery{
 animation-name: backgroundtransition;
@@ -41,11 +42,11 @@ h1.gallery{
   background-color: #52528C; /* Purple Navy */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 30px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   font-family: monospace;
   margin: 100px 2px;
   border-radius: 10px;
@@ -61,7 +62,7 @@ h1.gallery{
 .topnav {
   overflow: hidden;
   background-color: #372554;
-  position: sticky;
+  position: static;
   top: 0;
 
 }
@@ -105,12 +106,13 @@ h1.gallery{
   color: white;
 }
 
-#treeimg {
-  max-width: 35%;
-  height: auto;
-  position: absolute;
-  top: 75px;
-  right: 70px;
+div.treeimg {
+
+  width: 792px;
+  height:999px;
+  position: relative;
+  top: -600px;
+  left: 950px;
 }
 
 div.gallery {
@@ -143,3 +145,6 @@ div.description{
 img.thumbnail {
    width:100%;
  }
+img.treeimg{
+  width:82%;
+}
