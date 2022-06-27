@@ -106,13 +106,22 @@ h1.gallery{
   color: white;
 }
 
-div.treeimg {
-
-  width: 792px;
+.treeimg {
+  margin:auto;
+  width:792px;
   height:999px;
   position: relative;
   top: -600px;
   left: 950px;
+  border: 3px solid #FFF;
+}
+
+span.container{
+  width: 10%
+  height:auto;
+  float: right;
+  border: 3px solid #FFF;
+
 }
 
 div.gallery {
@@ -143,8 +152,11 @@ div.description{
  }
 
 img.thumbnail {
-   width:100%;
+   width:50%;
+   height: auto;
  }
-img.treeimg{
-  width:82%;
+img.treeimg2{
+  max-width:50%;
+  height: auto;
+  float:left;
 }
