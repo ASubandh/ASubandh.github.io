@@ -14,34 +14,96 @@
   <body>
     <div class="topnav">
       <a class="name" style="color:white; float:left;">Abhishek Subandh</a>
-      <a href="#top">Contact</a>
+      <a href="#contactinfo">Contact</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About</a>
       <a class="active" href="index.html">Home</a>
     </div>
 
-    <div style="margin: 80px 0px -120px 70px; " >
+    <div style="margin: 80px 70px -120px 70px; " >
       <h1>Hi, I'm</h1>
       <!--h1 style ="font-family:monospace; padding-top:0px; color:#7C9EB2; font-size: 600%;">Abhishek</h1-->
       <span class="container">
-        <img class=" treeimg2" src="electronics circuit online blue.png" alt="Tree but a circuit board" style="float:none;" >
+        <img class=" treeimg2" src="handpicked/electronics circuit online blue.png" alt="Tree but a circuit board" style="float:none;" >
       </span>
     </div>
 
-    <div style="margin: 0px 0px 0px 70px; border: 3px solid #7C9EB2;">
+    <!--border: 3px solid #7C9EB2;-->
+    <div style="margin: 0px 70px 0px 70px;" >
       <!--h1 style ="font-family: 'Jaldi', sans-serif;">Hi, I'm</h1-->
       <h1 style ="font-family:monospace;  color:#7C9EB2; font-size: 1200%; margin-bottom:-25px;">Abhishek</h1>
       <h1>C/Python Developer</h1>
-      <a style="margin: 0px 0px 0px 0px;" href = "resume.pdf" class ="button">Resume</a>
-      <a style="margin: 0px 0px 0px 10px;" href = "gallery.html" class ="button">Test</a>
-
-
+      <a style="margin: 0px 0px 0px 0px;" target="_blank" href = "resume.pdf" class ="button">Resume</a>
+      <!--a style="margin: 0px 0px 0px 10px;" href = "gallery.html" class ="button">Test</a-->
+      <a href = "#featuredprojects" class="arrow" style="margin-top:17.5%;"></a>
+      <!--div class="arrow" style="border: 3px solid #7C9EB2; margin-top:17.5%;"></div-->
+      <!--border: 1px solid #FFF;-->
     </div>
-
     <!--this is a comment-->
     <main>
+      <div style="text-align:center;">
+        <h1 class="gallery" style="opacity:0; margin-top:20%" id="featuredprojects">Featured Projects</h1>
+      </div>
+
+      <!--Container starts here-->
+      <!--border: 1px solid #FFF;-->
+      <div <style=" overflow:hidden; height:auto; margin: 0% 10% 2.5% 10%;">
+
+        <div class = "gallery" style="margin: 5% 5% 0% 5%;">
+          <a target="_blank" href = "construction.html">
+            <img src = "handpicked/Thumbnails/seathumb1.jpg" alt = "seattleimages" class="thumbnail">
+          </a>
+          <div class="description">
+            <div style="font-weight:bold">Jungkook Chess</div>
+            <p class="project">
+              BTS-themed chess application in the C programming language.
+              Features Jungkook from BTS as a virtual assistant!
+              <br><br>
+            </p>
+            <a target="_blank" href = "construction.html" class ="button" style="margin: 50px 2px;" download="Jungkook Chess">Download</a>
+          </div>
+
+        </div>
+
+        <div class = "gallery"style="margin: 5% 5% 0% 5%;">
+          <a target="_blank" href = "construction.html">
+            <img src = "handpicked/Thumbnails/sfthumb2.jpg" alt = "sfimages" class="thumbnail">
+          </a>
+          <div class="description">
+            <div style="font-weight:bold">GreedyAnts</div>
+            <p class="project">
+              Full-stack web application for HackUCI 2022 that suggests recipes based on
+                ingredients from user’s input with React frontend and Python/Flask backend
+            </p>
+            <a target="_blank" href = "https://github.com/tig-github/GreedyAnts" class ="button" style="margin: 50px 2px;">See More!</a>
+          </div>
+        </div>
+
+      <div class = "gallery" style="margin: 5% 5% 0% 5%;">
+        <a target="_blank" href = "construction.html">
+          <img src = "handpicked/Thumbnails/yosthumb.jpg" alt = "yosemiteimages" class="thumbnail">
+        </a>
+        <div class="description">
+          <div style="font-weight:bold">ValoLeagueChecker</div>
+          <p class="project">
+            Constructed a bot in Python using the BeautifulSoup library that scrapes data from various websites and
+            displays it on Discord, an instant messaging platform.
+          </p>
+          <a target="_blank" href = "https://discord.com/api/oauth2/authorize?client_id=791960837283250216&permissions=0&scope=bot"
+           class ="button" style="margin: 50px 2px;">Invite!</a>
+        </div>
+      </div>
+    </div>
+
+    <!--hr size="10"-->
+    <div style="text-align:center; margin:58% 15% 15% 15%;">
+      <h1 class="gallery" style="opacity:0; margin-top:5%" id="contactinfo">Contact</h1>
+      <p style="font-size:200%">(too lazy to finish this today)</p>
+    </div>
+
     </main>
-    <footer>
+
+    <footer style="margin: 10% 0% 0% 0%;">
       Copyright © 2022 Abhishek Subandh.
     </footer>
   </body>
