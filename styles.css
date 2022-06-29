@@ -121,7 +121,7 @@ h1.gallery{
 }
 
 span.container{
-  /*width: 10%;*/
+  max-width: 100%;
   height:auto;
   float: right;
   /*border: 3px solid #FFF;*/
@@ -135,7 +135,7 @@ span.container{
 }
 
 div.gallery {
-  margin: 80px 70px 0px 100px;
+  margin: 80px 70px 0px 70px;
   border: 3px solid #FFF;
   border-radius: 5px;
   float: left;
@@ -165,6 +165,7 @@ img.thumbnail {
    width:100%;
    height: auto;
  }
+
 img.treeimg2{
   max-width:82.5%;
   height: auto;
@@ -220,4 +221,71 @@ img.treeimg2{
   float: left;
   width: 30.99999%;
   border: 1px solid #777;
+}
+
+#albumcontainer {
+  overflow:hidden;
+  height:auto;
+  margin: 0% 3% 0% 3%;
+  /*border: 1px solid #FFF;*/
+}
+
+
+@media only screen and (max-width: 1892px) {
+  /*img.treeimg2{
+    max-width:61.85%;
+    height: auto;
+    /*float:right;
+    margin: 0% 0% 10% 15%;
+    } */
+    span.container{
+      max-width:45%;
+      height: auto;
+    }
+}
+@media only screen and (max-width: 1350px) {
+  /*img.treeimg2{
+    max-width:61.85%;
+    height: auto;
+    /*float:right;
+    margin: 0% 0% 10% 15%;
+    } */
+    span.container{
+      display: none;
+      }
+    .arrow:before{
+      display: none;
+      }
+    .arrow {
+      display: none;
+      }
+      div.gallery{
+      width:650px;
+      margin: 80px 70px 0px 70px;
+      height: auto;
+    }
+    #albumcontainer {
+      margin: 0% 3% 0% -100%;
+    }
+}
+
+
+/*needs to be in chronological order*/
+@media only screen and (max-width: 1900px) {
+
+      div.gallery{
+      max-width:350px;
+      margin: 80px 70px 0px 70px;
+      height: auto;
+    }
+    #albumcontainer {
+      margin: 0% 3% 0% 3%;
+    }
+}
+
+@media only screen and (max-width: 1919px) {
+
+    #albumcontainer {
+      margin: 0% 3% 0% 7%;
+    }
 }
