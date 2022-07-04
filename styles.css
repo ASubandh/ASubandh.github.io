@@ -3,12 +3,17 @@ body {
   font-family:monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 footer{
   color:white;
   font-family: 'Jaldi', sans-serif;
   font-size: 100%;
   text-align: center;
 }
+
 body.gallery{
 animation-name: backgroundtransition;
 animation-duration: 0.7s;
@@ -124,8 +129,6 @@ span.container{
   max-width: 100%;
   height:auto;
   float: right;
-  /*border: 3px solid #FFF;*/
-  /*margin-top: 0%;*/
   margin-left: -10%;
   position: relative;
   top: -200px;
@@ -135,11 +138,9 @@ span.container{
 }
 
 div.gallery {
-  margin: 80px 70px 0px 70px;
   border: 3px solid #FFF;
   border-radius: 5px;
-  float: left;
-  width: 400px;
+  width: 85%;
   opacity: 0;
   transition-duration: 0.4s;
   animation-name: gallerytransition;
@@ -166,6 +167,18 @@ img.thumbnail {
    height: auto;
  }
 
+.responsive{
+  /*outline: thin dashed green;*/
+  padding: 0% 1% 0% 6.5%;
+  float: left;
+  width: 33.33333%;
+ }
+
+.responsive2{
+  padding: 0% 1% 5% 5.0%;
+}
+
+
 img.treeimg2{
   max-width:82.5%;
   height: auto;
@@ -178,6 +191,7 @@ img.treeimg2{
 .arrow:before{
   position: absolute;
   left: 50%;
+  clear:both;
 }
 
 .arrow {
@@ -215,15 +229,8 @@ img.treeimg2{
 /*end of code created by someone else*/
 
 /*From w3 schools*/
-
-.responsive {
-  padding: 6px 6px;
-  float: left;
-  width: 30.99999%;
-  border: 1px solid #777;
-}
-
 #albumcontainer {
+
   overflow:hidden;
   height:auto;
   margin: 0% 3% 0% 3%;
@@ -232,60 +239,27 @@ img.treeimg2{
 
 
 @media only screen and (max-width: 1892px) {
-  /*img.treeimg2{
-    max-width:61.85%;
-    height: auto;
-    /*float:right;
-    margin: 0% 0% 10% 15%;
-    } */
     span.container{
       max-width:45%;
       height: auto;
     }
 }
 @media only screen and (max-width: 1350px) {
-  /*img.treeimg2{
-    max-width:61.85%;
-    height: auto;
-    /*float:right;
-    margin: 0% 0% 10% 15%;
-    } */
-    span.container{
-      display: none;
-      }
-    .arrow:before{
-      display: none;
-      }
-    .arrow {
-      display: none;
-      }
-      div.gallery{
-      width:650px;
-      margin: 80px 70px 0px 70px;
-      height: auto;
+  span.container{
+    display: none;
     }
-    #albumcontainer {
-      margin: 0% 3% 0% -100%;
+  .arrow:before{
+    display: none;
+    }
+  .arrow {
+    display: none;
     }
 }
 
 
 /*needs to be in chronological order*/
 @media only screen and (max-width: 1900px) {
-
-      div.gallery{
-      max-width:350px;
-      margin: 80px 70px 0px 70px;
-      height: auto;
-    }
-    #albumcontainer {
-      margin: 0% 3% 0% 3%;
-    }
 }
 
 @media only screen and (max-width: 1919px) {
-
-    #albumcontainer {
-      margin: 0% 3% 0% 7%;
-    }
 }

@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="handpicked/favicon.ico">
     <title>Abhishek Subandh</title>
   </head>
 
-  <div style="margin: 0% 0% 0% 0%;">
   <body>
     <div class="topnav">
       <a class="name" style="color:white; float:left;">Abhishek Subandh</a>
@@ -30,13 +30,14 @@
     </div>
 
     <!--border: 3px solid #7C9EB2;-->
-    <div style="margin: 0px 70px 0px 70px;" >
+    <div style="margin: 0px 70px 0px 70px; " >
       <!--h1 style ="font-family: 'Jaldi', sans-serif;">Hi, I'm</h1-->
       <h1 style ="font-family:monospace;  color:#7C9EB2; font-size: 1200%; margin-bottom:-25px;">Abhishek</h1>
       <h1>C/Python Developer</h1>
-      <a style="margin: 0px 0px 0px 0px;" target="_blank" href = "resume.pdf" class ="button">See my Resume!</a>
+      <a style="margin: 0px 10px 0px 0px;" target="_blank" href = "resume.pdf" class ="button">See my Resume!</a>
       <!--a style="margin: 0px 0px 0px 10px;" href = "gallery.html" class ="button">Test</a-->
-      <a href = "#featuredprojects" class="arrow" style="margin-top:17.5%;"></a>
+
+      <div><a href = "#featuredprojects" class="arrow" style="margin-top:17.5%;"></a></div>
       <!--div class="arrow" style="border: 3px solid #7C9EB2; margin-top:17.5%;"></div-->
       <!--border: 1px solid #FFF;-->
     </div>
@@ -49,43 +50,47 @@
       <!--Container starts here-->
       <!--border: 1px solid #FFF;-->
       <div id="albumcontainer">
-
-        <div class = "gallery" style="margin: 5% 5% 0% 5%;">
+        <div class= "responsive">
+          <div class = "gallery">
             <img src = "handpicked/logos/chess.png" alt = "seattleimages" class="thumbnail">
           <div class="description">
             <div style="font-weight:bold">Jungkook Chess</div>
-            <p class="project">
-              BTS-themed chess application in the C programming language.
-              Features Jungkook from BTS as a virtual assistant!
-              <br><br>
-            </p>
-            <a target="_blank" href = "construction.html" class ="button" style="margin: 50px 2px;" download="Jungkook Chess">Download</a>
+              <p class="project">
+                BTS-themed chess application in the C programming language.
+                Features Jungkook from BTS as a virtual assistant!
+                <br><br>
+              </p>
+              <a target="_blank" href = "construction.html" class ="button" style="margin: 50px 2px;" download="Jungkook Chess">Download</a>
           </div>
-
         </div>
+      </div>
 
-        <div class = "gallery"style="margin: 5% 5% 0% 5%;">
+      <div class= "responsive">
+        <div class = "gallery">
             <img src = "handpicked/logos/greedyants.png" alt = "sfimages" class="thumbnail">
           <div class="description">
             <div style="font-weight:bold">GreedyAnts</div>
-            <p class="project">
-              Full-stack web application for HackUCI 2022 that suggests recipes based on
-                ingredients from user’s input with React frontend and Python/Flask backend
-            </p>
-            <a target="_blank" href = "https://github.com/tig-github/GreedyAnts" class ="button" style="margin: 50px 2px;">See More!</a>
+              <p class="project">
+                Full-stack web application for HackUCI 2022 that suggests recipes based on
+                  ingredients from user’s input with React frontend and Python/Flask backend
+              </p>
+              <a target="_blank" href = "https://github.com/tig-github/GreedyAnts" class ="button" style="margin: 50px 2px;">See More!</a>
           </div>
         </div>
+      </div>
 
-      <div class = "gallery" style="margin: 5% 5% 0% 5%;">
+      <div class= "responsive">
+        <div class = "gallery" >
           <img src = "handpicked/logos/valoleeg.png" alt = "yosemiteimages" class="thumbnail">
-        <div class="description">
-          <div style="font-weight:bold">ValoLeagueChecker</div>
-          <p class="project">
-            Constructed a bot in Python using the BeautifulSoup library that scrapes data from various websites and
-            displays it on Discord, an instant messaging platform.
-          </p>
-          <a target="_blank" href = "https://discord.com/api/oauth2/authorize?client_id=791960837283250216&permissions=0&scope=bot"
-           class ="button" style="margin: 50px 2px;">Invite!</a>
+          <div class="description">
+            <div style="font-weight:bold">ValoLeagueChecker</div>
+              <p class="project">
+                Constructed a bot in Python using the BeautifulSoup library that scrapes data from various websites and
+                displays it on Discord, an instant messaging platform.
+              </p>
+              <a target="_blank" href = "https://discord.com/api/oauth2/authorize?client_id=791960837283250216&permissions=0&scope=bot"
+               class ="button" style="margin: 50px 2px;">Invite!</a>
+          </div>
         </div>
       </div>
     </div>
