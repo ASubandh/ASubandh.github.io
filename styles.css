@@ -178,6 +178,10 @@ img.thumbnail {
   padding: 0% 1% 5% 5.0%;
 }
 
+.responsive3{
+  width: 100%;
+  padding: 0% 0% 5% 11.5%;
+}
 
 img.treeimg2{
   max-width:82.5%;
@@ -262,4 +266,8 @@ img.treeimg2{
 }
 
 @media only screen and (max-width: 1919px) {
+}
+
+.galleryspaces{
+  padding: 5% 0% 5% 0%
 }
