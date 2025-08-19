@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 1500px;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    /* Relative */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: lightblue;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Absolute inside relative parent */
+    .absolute-parent {
+      position: relative;
+      height: 200px;
+      background: #ddd;
+      margin-bottom: 30px;
+    }
+    .absolute-child {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background: coral;
+      padding: 10px;
+    }
+
+    /* Fixed */
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: gold;
+      padding: 10px;
+      border: 2px solid black;
+    }
+
+    /* Sticky */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: lightgreen;
+      padding: 10px;
+      border: 2px solid darkgreen;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="relative-box">
+      <b>Relative:</b> I'm shifted 20px down, 30px right, but still in flow.
+    </div>
+
+    <div class="absolute-parent">
+      <b>Absolute Parent (gray box)</b>
+      <div class="absolute-child">
+        Absolute: I'm pinned 50px from top-left of parent.
+      </div>
+    </div>
+
+    <div class="sticky-box">
+      Sticky: I stick to the top when scrolling, but only inside this container.
+    </div>
+
+    <p>Scroll down the page to see how <b>fixed</b> and <b>sticky</b> behave differently.</p>
+    <p>Keep scrolling... lots of content here
