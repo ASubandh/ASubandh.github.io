@@ -3,48 +3,135 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content= "C and Python developer with a passion for optimization">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.1">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Fira+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="handpicked/favicon.ico">
     <title>Abhishek Subandh</title>
   </head>
 
   <body>
-    <div class="topnav">
-      <a class="name" style="color:white; float:left;">Abhishek Subandh</a>
-      <a href="#top">Contact</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a>
-      <a class="active" href="index.html">Home</a>
-    </div>
-
-    <div style="margin: 80px 0px -120px 70px; " >
-      <h1>Hi, I'm</h1>
-      <!--h1 style ="font-family:monospace; padding-top:0px; color:#7C9EB2; font-size: 600%;">Abhishek</h1-->
-    </div>
-
-    <div style="margin: 0px 0px 0px 70px; ">
-      <!--h1 style ="font-family: 'Jaldi', sans-serif;">Hi, I'm</h1-->
-      <h1 style ="font-family:monospace;  color:#7C9EB2; font-size: 1200%; margin-bottom:-25px;">Abhishek</h1>
-      <h1>C/Python Developer</h1>
-      <a style="margin: 0px 0px 0px 0px;" href = "resume.pdf" class ="button">Resume</a>
-      <a style="margin: 0px 0px 0px 10px;" href = "gallery.html" class ="button">Test</a>
-      <div class="treeimg">
-      <img class="treeimg" src="electronics circuit online blue.png" alt="Tree but a circuit board" style="float:right;">
+      <div class="topnav">
+        <a class="name" style="color:white; float:left;">Abhishek Subandh</a>
+        <a href="#contactinfo">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#featuredprojects">Projects</a>
+          <div class="dropdown-content">
+            <a href="construction.html">Web Projects</a>
+            <a href="construction.html">Hardware Projects</a>
+            <a href="construction.html">Misc</a>
+          </div>
+        <a href="about.html">About</a>
+        <a class="active" href="index.html">Home</a>
       </div>
 
+    <!--div style="margin: 80px 70px -120px 70px; " -->
+    <div style="margin: 5% 1% -3.5% 70px; " >
+      <h1>Hi, I'm <br></h1>
+      <!--h1 style ="font-family:monospace; padding-top:0px; color:#7C9EB2; font-size: 600%;">Abhishek</h1-->
+      <span class="container">
+        <img class=" treeimg2" src="handpicked/electronics circuit online blue.png" alt="Tree but a circuit board" style="float:none;" >
+      </span>
     </div>
 
-
+    <!--border: 3px solid #7C9EB2;-->
+    <div style="margin: 0px 70px 0px 70px; " >
+      <!--h1 style ="font-family: 'Jaldi', sans-serif;">Hi, I'm</h1-->
+      <h1 style ="font-family:monospace;  color:#7C9EB2; font-size: 1100%; margin-bottom:2%;">Abhishek</h1>
+      <h1>Designing a Sustainable Future</h1>
+      <!--a style="margin: 0px 10px 0px 0px;" target="_blank" href = "resume.pdf" class ="button">See my Resume!</a>
+      <!--a style="margin: 0px 0px 0px 10px;" href = "gallery.html" class ="button">Test</a-->
+      
+      <!--
+      <div><a href = "#featuredprojects" class="arrow" style="margin-top:25.5%;"></a></div>
+      <!--div class="arrow" style="border: 3px solid #7C9EB2; margin-top:17.5%;"></div-->
+      <!--border: 1px solid #FFF;-->
+      </div>
+      -->
 
     <!--this is a comment-->
     <main>
+      <div style="text-align:center;">
+        <h1 class="gallery" style="opacity:0; margin-top:25%" id="featuredprojects">Featured Projects<br><br></h1>
+      </div>
+
+      <!--Container starts here-->
+      <!--border: 1px solid #FFF;-->
+      <div id="albumcontainer">
+        <div class= "responsive">
+          <div class = "gallery">
+            <img src = "handpicked/logos/chess.png" alt = "seattleimages" class="thumbnail">
+          <div class="description">
+            <div style="font-weight:bold">Chess</div>
+              <p class="project">
+                Straightforward Chess game created purely in C, featuring a virtual assistant.
+                <br><br><br><br><br>
+                
+              </p>
+              <a target="_blank" href = "ChessGame.exe" class ="button" id="projectbutton" style="margin: 50px 2px;" download="Jungkook Chess">Download (.exe)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "responsive">
+        <div class = "gallery" >
+          <img src = "handpicked/logos/CropCube_transparent.png" alt = "yosemiteimages" class="thumbnail">
+          <div class="description">
+            <div style="font-weight:bold">CropCube</div>
+              <p class="project">
+                Indoor automated hydroponic vertical farm. 
+                Uses 90% less water than conventional farming methods!
+                <br><br><br><br>
+              </p>
+              <a href = "cropcube.html" class ="button" id="projectbutton" style="margin: 50px 2px;">See More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "responsive">
+        <div class = "gallery">
+            <img src = "handpicked/logos/greedyants.png" alt = "sfimages" class="thumbnail">
+          <div class="description">
+            <div style="font-weight:bold">GreedyAnts</div>
+              <p class="project">
+                Full-stack web application for HackUCI 2022 that suggests recipes based on
+                  ingredients from user’s input with React frontend and Python/Flask backend
+                  
+              </p>
+              <a target="_blank" href = "https://github.com/tig-github/GreedyAnts" class ="button" id="projectbutton" style="margin: 50px 2px;">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--hr size="10"-->
+    <div style="text-align:center; margin:5% 15% 1.5% 15%; ">
+      <h1 class="gallery" style="opacity:0; margin-top:5%" id="contactinfo">Contact</h1>
+
+      <span>
+      <a target="_blank" href = "https://github.com/ASubandh">
+        <img src = "handpicked/Thumbnails/githublogo2.jpg" alt = "githubicon" width="100px" height="100px" style=" margin:0% 5% 1.5% 5%;">
+      </a>
+      </span>
+
+      <span>
+        <a target="_blank" href = "https://www.linkedin.com/in/abhishek-subandh-b18a72239/">
+          <img src = "handpicked/logos/linkedicon.png" alt = "linkedinicon" width="100px" height="100px" style=" margin:0% 5% 1.5% 5%;">
+        </a>
+      </span>
+      <!--p style="font-size:200%">(too lazy to finish this today)</p-->
+
+    </div>
+
     </main>
-    <footer>
+
+    <footer style="margin: 7% 0% 0% 0%;">
       Copyright © 2022 Abhishek Subandh.
     </footer>
   </body>
-
+</div>
 </html>
